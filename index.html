@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Aroma: café de especialidad, postres artesanales y buenos momentos.">
+  <title>Café Aroma | Buen café, mejores momentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="navbar navbar-expand-lg container-fluid px-3 px-lg-5">
+      <a class="brand" href="#inicio" aria-label="Café Aroma inicio">
+        <span class="brand-icon"></span><span><strong>Café Aroma</strong><small>Buen café, mejores momentos</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros" data-es="Nosotros" data-en="Our story">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu" data-es="Menú" data-en="Menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#promos" data-es="Promociones" data-en="Offers">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria" data-es="Galería" data-en="Gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ubicacion" data-es="Ubicación" data-en="Location">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+        <div class="nav-tools">
+          <button class="tool-btn" id="langBtn" type="button" aria-label="Cambiar idioma">🇪🇸 ES / EN</button>
+          <button class="tool-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☼ / ☾</button>
+          <button class="tool-btn" id="musicBtn" type="button">♫ <span data-es="Música" data-en="Music">Música</span> <span id="musicState">Ⅱ</span></button>
+          <button class="tool-btn cart-btn" id="cartOpen" type="button" aria-label="Abrir carrito">🛒 <b id="cartCount">0</b></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow" data-es="Una pausa que sabe a hogar" data-en="A little pause that feels like home">Una pausa que sabe a hogar</p>
+        <h1><span data-es="El lugar perfecto para" data-en="The perfect place to">El lugar perfecto para</span><br><em data-es="disfrutar un buen café" data-en="enjoy a good coffee">disfrutar un buen café</em></h1>
+        <p class="hero-copy" data-es="Café recién preparado, postres hechos en casa y un rincón tranquilo para compartir tus mejores momentos." data-en="Freshly brewed coffee, homemade desserts and a cozy corner to share your best moments.">Café recién preparado, postres hechos en casa y un rincón tranquilo para compartir tus mejores momentos.</p>
+        <a class="btn btn-cream" href="#menu" data-es="  Ver menú" data-en="  View menu"> Ver menú</a>
+      </div>
+      <div class="hero-note">Buenas vibras<br>y café <span>♡</span></div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <div class="benefit"><span></span><p data-es="Café de especialidad<small>100% natural</small>" data-en="Specialty coffee<small>100% natural</small>">Café de especialidad<small>100% natural</small></p></div>
+        <div class="benefit"><span>♧</span><p data-es="Postres artesanales<small>Hechos con cariño</small>" data-en="Homemade desserts<small>Made with care</small>">Postres artesanales<small>Hechos con cariño</small></p></div>
+        <div class="benefit"><span>⌁</span><p data-es="Wi-Fi gratuito<small>Para nuestros clientes</small>" data-en="Free Wi-Fi<small>For our guests</small>">Wi-Fi gratuito<small>Para nuestros clientes</small></p></div>
+        <div class="benefit"><span>♡</span><p data-es="Ambiente acogedor<small>Ven como eres</small>" data-en="Cozy atmosphere<small>Come as you are</small>">Ambiente acogedor<small>Ven como eres</small></p></div>
+        <div class="benefit"><span>♧</span><p data-es="Pedidos a domicilio<small>Tu café hasta la puerta</small>" data-en="Home delivery<small>Coffee at your door</small>">Pedidos a domicilio<small>Tu café hasta la puerta</small></p></div>
+      </div>
+    </section>
+
+    <section class="section-block story-section" id="nosotros">
+      <div class="container">
+        <div class="section-heading"><span class="overline" data-es="UN RINCÓN CON HISTORIA" data-en="A PLACE WITH A STORY">UN RINCÓN CON HISTORIA</span><h2 data-es="Más que café, pequeños momentos" data-en="More than coffee, little moments">Más que café, pequeños momentos</h2></div>
+        <div class="story-grid">
+          <img class="story-photo" src="img/cafe-local.jpg" alt="Interior cálido de una cafetería" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85'">
+          <div class="story-copy">
+            <h3 data-es="Bienvenido a Café Aroma" data-en="Welcome to Café Aroma">Bienvenido a Café Aroma</h3>
+            <p data-es="Nacimos de algo sencillo: las ganas de servir buen café en un lugar donde nadie tenga prisa. Seleccionamos nuestros granos, preparamos cada bebida al momento y hacemos nuestros postres en pequeñas tandas." data-en="We started with a simple idea: serving good coffee in a place where nobody needs to rush. We choose our beans carefully, make every drink to order and bake our desserts in small batches.">Nacimos de algo sencillo: las ganas de servir buen café en un lugar donde nadie tenga prisa. Seleccionamos nuestros granos, preparamos cada bebida al momento y hacemos nuestros postres en pequeñas tandas.</p>
+            <p data-es="Ven a estudiar, conversar, leer un rato o simplemente disfrutar el aroma del café recién hecho." data-en="Come to study, chat, read for a while or simply enjoy the smell of freshly brewed coffee.">Ven a estudiar, conversar, leer un rato o simplemente disfrutar el aroma del café recién hecho.</p>
+            <div class="mini-facts"><span> Café preparado al momento</span><span>✦ Recetas de la casa</span><span>✦ Un espacio para todos</span></div>
+            <a class="text-link" href="#ubicacion" data-es="Conócenos en persona →" data-en="Come and meet us →">Conócenos en persona →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading centered"><span class="overline" data-es="HECHO PARA DISFRUTAR" data-en="MADE TO ENJOY">HECHO PARA DISFRUTAR</span><h2 data-es="Algo rico para cada antojo" data-en="Something good for every craving">Algo rico para cada antojo</h2><p data-es="Elige tu favorito. Todo se prepara con mucho cariño." data-en="Choose your favorite. Everything is made with care.">Elige tu favorito. Todo se prepara con mucho cariño.</p></div>
+        <div class="category-row">
+          <button class="category active" data-filter="all" data-es="Todo" data-en="All">Todo</button>
+          <button class="category" data-filter="coffee" data-es="Cafés" data-en="Coffee">Cafés</button>
+          <button class="category" data-filter="cold" data-es="Bebidas frías" data-en="Cold drinks">Bebidas frías</button>
+          <button class="category" data-filter="dessert" data-es="Postres" data-en="Desserts">Postres</button>
+          <button class="category" data-filter="snack" data-es="Snacks" data-en="Snacks">Snacks</button>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="coffee"><img src="https://images.unsplash.com/photo-150One?auto=format&fit=crop&w=700&q=80" alt="Latte art" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80'"><div class="product-info"><h3>Latte clásico</h3><p>Espresso suave y leche cremosa.</p><div><strong>$3.50</strong><button class="add-cart" data-name="Latte clásico" data-price="3.5">＋</button></div></div></article>
+          <article class="product-card" data-category="coffee"><img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Capuchino espumoso"><div class="product-info"><h3>Capuchino</h3><p>Espuma suave con toque de cacao.</p><div><strong>$3.50</strong><button class="add-cart" data-name="Capuchino" data-price="3.5">＋</button></div></div></article>
+          <article class="product-card" data-category="coffee"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="Café negro"><div class="product-info"><h3>Americano</h3><p>Intenso, aromático y recién hecho.</p><div><strong>$2.50</strong><button class="add-cart" data-name="Americano" data-price="2.5">＋</button></div></div></article>
+          <article class="product-card" data-category="coffee"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80" alt="Mocha con crema"><div class="product-info"><h3>Mocha</h3><p>Café, chocolate y crema batida.</p><div><strong>$3.75</strong><button class="add-cart" data-name="Mocha" data-price="3.75">＋</button></div></div></article>
+          <article class="product-card" data-category="cold"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Café frío"><div class="product-info"><h3>Cold brew</h3><p>Café frío de sabor redondo.</p><div><strong>$3.75</strong><button class="add-cart" data-name="Cold brew" data-price="3.75">＋</button></div></div></article>
+          <article class="product-card" data-category="cold"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80" alt="Té helado"><div class="product-info"><h3>Té helado</h3><p>Refrescante, con limón natural.</p><div><strong>$2.75</strong><button class="add-cart" data-name="Té helado" data-price="2.75">＋</button></div></div></article>
+          <article class="product-card" data-category="dessert"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Pastel de chocolate"><div class="product-info"><h3>Pastel de chocolate</h3><p>Bizcocho húmedo y ganache.</p><div><strong>$4.99</strong><button class="add-cart" data-name="Pastel de chocolate" data-price="4.99">＋</button></div></div></article>
+          <article class="product-card" data-category="dessert"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" alt="Cheesecake de fresa"><div class="product-info"><h3>Cheesecake</h3><p>Suave, cremoso y con fruta.</p><div><strong>$4.50</strong><button class="add-cart" data-name="Cheesecake" data-price="4.5">＋</button></div></div></article>
+          <article class="product-card" data-category="dessert"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80" alt="Galletas artesanales"><div class="product-info"><h3>Galletas de la casa</h3><p>Recién horneadas, suaves al centro.</p><div><strong>$2.50</strong><button class="add-cart" data-name="Galletas de la casa" data-price="2.5">＋</button></div></div></article>
+          <article class="product-card" data-category="snack"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Pan recién horneado"><div class="product-info"><h3>Croissant</h3><p>Hojaldrado y doradito.</p><div><strong>$2.25</strong><button class="add-cart" data-name="Croissant" data-price="2.25">＋</button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-section section-block" id="promos">
+      <div class="container">
+        <div class="section-heading"><span class="overline" data-es="UN DETALLE PARA TI" data-en="A LITTLE TREAT FOR YOU">UN DETALLE PARA TI</span><h2 data-es="Promociones de la semana" data-en="Weekly specials">Promociones de la semana</h2></div>
+        <div class="promo-grid">
+          <article class="promo-card"><img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=700&q=80" alt="Café con croissant"><div><span class="promo-tag">LUNES A VIERNES</span><h3>Café + croissant</h3><p>Tu pausa favorita para empezar el día.</p><strong>$4.99</strong></div></article>
+          <article class="promo-card"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Pastel de chocolate"><div><span class="promo-tag">MIÉRCOLES</span><h3>Hora dulce</h3><p>15% de descuento en una porción de pastel con tu café.</p><strong>15% OFF</strong></div></article>
+          <article class="promo-card"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=700&q=80" alt="Dos tazas de café"><div><span class="promo-tag">PARA COMPARTIR</span><h3>Dos cafés, mejor charla</h3><p>Ven con alguien especial y disfruten juntos.</p><strong>2 × $5.50</strong></div></article>
+        </div>
+        <p class="fine-print" data-es="*Promociones de ejemplo para el diseño. Ajusta precios y condiciones según tu negocio." data-en="*Sample offers for this design. Update prices and terms for your business.">*Promociones de ejemplo para el diseño. Ajusta precios y condiciones según tu negocio.</p>
+      </div>
+    </section>
+
+    <section class="section-block gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading centered"><span class="overline" data-es="UN VISTAZO A NUESTRO RINCÓN" data-en="A LOOK INSIDE">UN VISTAZO A NUESTRO RINCÓN</span><h2 data-es="Momentos Café Aroma" data-en="Moments at Café Aroma">Momentos Café Aroma</h2><p data-es="Mesas tranquilas, café rico y rincones para quedarse un ratito más." data-en="Quiet tables, lovely coffee and corners where you can stay a little longer.">Mesas tranquilas, café rico y rincones para quedarse un ratito más.</p></div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Interior de cafetería">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85" alt="Preparación de café">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=85" alt="Mesas de cafetería">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85" alt="Taza de café">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85" alt="Restaurante acogedor">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=85" alt="Barra de café">
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section section-block" id="ubicacion">
+      <div class="container visit-grid">
+        <div class="visit-photo-wrap"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85" alt="Fachada y mesas de una cafetería"></div>
+        <div class="visit-copy"><span class="overline" data-es="TE GUARDAMOS UNA MESA" data-en="YOUR TABLE IS WAITING">TE GUARDAMOS UNA MESA</span><h2 data-es="Ven a visitarnos" data-en="Come visit us">Ven a visitarnos</h2><p data-es="Un lugar para desayunar sin prisa, trabajar un rato o reunirte con tus personas favoritas." data-en="A place for a slow breakfast, a little work or catching up with your favorite people.">Un lugar para desayunar sin prisa, trabajar un rato o reunirte con tus personas favoritas.</p><div class="detail-row"><span>⌖</span><div><b data-es="Dirección" data-en="Address">Dirección</b><p>Calle Principal #123, San Salvador, El Salvador</p></div></div><div class="detail-row"><span>◷</span><div><b data-es="Horario" data-en="Opening hours">Horario</b><p data-es="Lun–Dom · 7:00 a. m. – 9:00 p. m." data-en="Mon–Sun · 7:00 a.m. – 9:00 p.m.">Lun–Dom · 7:00 a. m. – 9:00 p. m.</p></div></div><a class="btn btn-dark-coffee" href="https://maps.google.com/?q=San+Salvador+El+Salvador" target="_blank" rel="noopener">⌖ <span data-es="Ver en Google Maps" data-en="Open Google Maps">Ver en Google Maps</span></a></div>
+      </div>
+    </section>
+
+    <section class="section-block delivery-section">
+      <div class="container delivery-grid">
+        <div class="delivery-card"><span class="large-icon">♧</span><div><h3 data-es="¿Lo llevamos a tu casa?" data-en="Shall we bring it to you?">¿Lo llevamos a tu casa?</h3><p data-es="Pide tus bebidas y postres para recoger o recibir en casa. Escríbenos y coordinamos los detalles." data-en="Order drinks and desserts for pickup or delivery. Message us and we'll arrange the details.">Pide tus bebidas y postres para recoger o recibir en casa. Escríbenos y coordinamos los detalles.</p><a class="btn btn-cream" href="https://wa.me/" target="_blank" rel="noopener">☏ <span data-es="Pedir por WhatsApp" data-en="Order on WhatsApp">Pedir por WhatsApp</span></a></div></div>
+        <div class="delivery-card"><span class="large-icon"></span><div><h3 data-es="Personaliza tu bebida" data-en="Customize your drink">Personaliza tu bebida</h3><p data-es="Elige leche normal o vegetal, intensidad, jarabe y si la prefieres caliente o con hielo." data-en="Choose dairy or plant milk, strength, syrup and whether you want it hot or iced.">Elige leche normal o vegetal, intensidad, jarabe y si la prefieres caliente o con hielo.</p><a class="text-link" href="#contacto" data-es="Cuéntanos cómo te gusta →" data-en="Tell us how you like it →">Cuéntanos cómo te gusta →</a></div></div>
+      </div>
+    </section>
+
+    <section class="section-block contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div><span class="overline" data-es="NOS ENCANTARÍA LEERTE" data-en="WE'D LOVE TO HEAR FROM YOU">NOS ENCANTARÍA LEERTE</span><h2 data-es="Hablemos de café" data-en="Let's talk coffee">Hablemos de café</h2><p data-es="¿Tienes una pregunta, quieres reservar una mesa o celebrar algo con nosotros? Déjanos un mensaje." data-en="Have a question, want to reserve a table or celebrate something with us? Leave us a message.">¿Tienes una pregunta, quieres reservar una mesa o celebrar algo con nosotros? Déjanos un mensaje.</p><div class="social-links"><a href="#contacto" aria-label="Instagram">◎ Instagram</a><a href="#contacto" aria-label="Facebook">f Facebook</a><a href="#contacto" aria-label="TikTok">♪ TikTok</a></div></div>
+        <form id="contactForm" class="contact-form">
+          <label for="customerName" data-es="Tu nombre" data-en="Your name">Tu nombre</label><input id="customerName" required placeholder="Nombre">
+          <label for="customerEmail" data-es="Correo electrónico" data-en="Email address">Correo electrónico</label><input id="customerEmail" type="email" required placeholder="correo@ejemplo.com">
+          <label for="customerMessage" data-es="¿Qué tienes en mente?" data-en="What's on your mind?">¿Qué tienes en mente?</label><textarea id="customerMessage" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+          <button class="btn btn-dark-coffee" type="submit" data-es="Enviar mensaje →" data-en="Send message →">Enviar mensaje →</button>
+          <small id="formNote" data-es="El formulario es una demostración; para recibir mensajes debes conectarlo a un servicio." data-en="This form is a demo; connect a service to receive messages.">El formulario es una demostración; para recibir mensajes debes conectarlo a un servicio.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-icon"></span><span><strong>Café Aroma</strong><small>Buen café, mejores momentos</small></span></a><p>© 2026 Café Aroma · <span data-es="Hecho con cariño y café." data-en="Made with care and coffee.">Hecho con cariño y café.</span></p><a href="#inicio" class="back-top">↑ <span data-es="Volver arriba" data-en="Back to top">Volver arriba</span></a></div>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel" aria-live="polite">
+    <div class="cart-header"><h3 data-es="Tu pedido" data-en="Your order">Tu pedido</h3><button id="cartClose" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems"><p data-es="Todavía no has agregado productos." data-en="You haven't added anything yet.">Todavía no has agregado productos.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="btn btn-dark-coffee w-100" id="checkoutBtn" data-es="Preparar pedido" data-en="Prepare order">Preparar pedido</button>
+  </div>
+  <audio id="cafeAudio" loop preload="none"></audio>
+  <div class="toast-note" id="toastNote" role="status"></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Carpeta para guardar fotos locales si lo deseas. Las fotografías actuales se cargan desde Unsplash y necesitan conexión a internet.
